@@ -1,0 +1,261 @@
+// Variables
+$primary-bg-color: #F0F0F0; // Couleur de fond principale
+$primary-text-color: #333; // Couleur de texte principale
+$font-family-sans: 'Helvetica Neue', sans-serif;
+$font-family-serif: 'Fraunces', serif;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 900;
+$font-size-large: 24px;
+$font-size-medium: 16px;
+$font-size-small: 14px;
+$line-height: 1.5;
+$secondary-bg-color: #000;
+$secondary-text-color: #fff;
+$button-bg-color: #000;
+$button-text-color: #fff;
+$card-bg-color: #fff;
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+$link-text-color: #555;
+$footer-bg-color: #000;
+$footer-link-color: #fff;
+
+// Global Styles
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  font-family: $font-family-sans;
+}
+
+// Header Styles
+header {
+  background-color: $secondary-bg-color;
+  color: $secondary-text-color;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sunny {
+  font-family: $font-family-serif;
+  font-weight: $font-weight-bold;
+  font-size: $font-size-large;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li:last-child {
+  margin-right: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: $secondary-text-color;
+}
+
+// Title Styles
+.title {
+  text-align: center;
+  padding: 60px;
+}
+
+.title h1 {
+  font-family: $font-family-serif;
+  font-weight: $font-weight-extra-bold;
+  font-size: $font-size-large;
+  margin-bottom: 20px;
+}
+
+.title img {
+  display: block;
+  margin: 0 auto;
+}
+
+// Description Section Styles
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: $primary-bg-color;
+}
+
+.descri-article {
+  text-align: center;
+  margin: 20px;
+}
+
+.descri-article img {
+  max-width: 100%;
+  height: auto;
+}
+
+.descri-article h2 {
+  font-family: $font-family-serif;
+  font-weight: $font-weight-extra-bold;
+  font-size: $font-size-large;
+  margin: 10px 0;
+}
+
+.descri-article p {
+  font-size: $font-size-medium;
+  line-height: $line-height;
+  color: $link-text-color;
+}
+
+.descri-article a {
+  text-decoration: none;
+  background-color: $button-bg-color;
+  color: $button-text-color;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+// Specializing Section Styles
+.specializing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary-bg-color;
+  padding: 40px;
+}
+
+.card {
+  background-color: $card-bg-color;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 10px $box-shadow-color;
+  margin: 20px;
+}
+
+.card h3 {
+  font-family: $font-family-serif;
+  font-weight: $font-weight-extra-bold;
+  font-size: $font-size-large;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: $font-size-medium;
+  line-height: $line-height;
+  color: $link-text-color;
+}
+
+// Clients Section Styles
+.clients {
+  text-align: center;
+  padding: 60px;
+}
+
+.clients h2 {
+  font-family: $font-family-serif;
+  font-weight: $font-weight-extra-bold;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.art-footer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.art-body p {
+  font-size: $font-size-medium;
+  line-height: $line-height;
+  color: $link-text-color;
+}
+
+.art-footer h4 {
+  font-family: $font-family-serif;
+  font-weight: $font-weight-extra-bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+// Gallery Section Styles
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: $primary-bg-color;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+// Footer Styles
+footer {
+  background-color: $footer-bg-color;
+  color: $footer-link-color;
+  text-align: center;
+  padding: 20px;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.link ul li {
+  margin-right: 20px;
+}
+
+.link ul li:last-child {
+  margin-right: 0;
+}
+
+.link ul li a {
+  text-decoration: none;
+  color: $footer-link-color;
+}
+
+.contact ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.contact ul li {
+  margin-right: 20px;
+}
+
+.contact ul li:last-child {
+  margin-right: 0;
+}
+
+.contact ul li a img {
+  max-width: 100%;
+  height: auto;
+}
